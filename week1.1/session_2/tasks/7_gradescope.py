@@ -4,9 +4,14 @@
 
 # Ask a user to enter two numbers (one per input)
 
-# multiply those numbers together
+try:
+    num1 = int(input("Enter first number: "))
+    num2 = int(input("Enter second number: "))
+    product = num1 * num2
+    print(product)
+except ValueError:
+    print("That is not a number")
 
-# print out the result
 
 # There is an extra point available for validating that they entered numbers!
 # Add to your code so that if they entered something other than an integer it prints

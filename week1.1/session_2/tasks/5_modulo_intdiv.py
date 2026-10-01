@@ -21,6 +21,11 @@ for row in data:
     days = 0
     hours = 0
     minutes = 0
+
+    days = minutes_late // 1440
+    extra = minutes_late % 1440
+    hours = extra // 60
+    minutes = extra % 60
     
     print(f"Student {row[0]}: {days}D {hours}H {minutes}M")
 
