@@ -2,8 +2,16 @@
 
 
 # Prompt the user for their name, age, and favorite colour.
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+colour = input("Enter your favourite colour: ")
 
 # Open a file called 'user_info.txt' for reading
+
+with open("user_info.txt", "w") as outfile:
+    outfile.write(f"Name: {str(name)}\n")
+    outfile.write(f"Age: {str(age)}\n")
+    outfile.write(f"Favourite Colour: {str(colour)}\n")
 
 # Write each piece of information to the file, each on a new line.
 
