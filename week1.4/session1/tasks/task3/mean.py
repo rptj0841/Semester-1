@@ -1,4 +1,5 @@
 def mean(numList):
+    """ This function accepts a list of integers and returns the mena average of the list"""
     total = 0
     for i in range(len(numList)):
         total += numList[i]

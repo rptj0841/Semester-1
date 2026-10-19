@@ -11,6 +11,7 @@
 # function implementation
 
 def mystery_func(string):
+    """ This function returns the number of uppercase and lowercase characters """
     upper = 0
     lower = 0
 
@@ -34,5 +35,5 @@ print(mystery_func("ABC"))
 # Uncomment the lines of code one by one and run the program
 # to see if you are right?
 
-# print(mystery_func("X"))
-# print(mystery_func("[2, 3]"))
+print(mystery_func("X"))
+print(mystery_func("[2, 3]"))
