@@ -10,5 +10,5 @@ num2 = int(input("Enter second number: "))
 total = num1 + num2
 
 # print out the answer
-print(total)
+print(f"{num1} + {num2} = {total}")
 

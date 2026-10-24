@@ -3,8 +3,11 @@
 
 # Find and fix the errors
 
-name = input("Enter your name: ")
-age = int(input("Enter your age: "))
-city = input("Enter your city: ")
+try:
+    name = input("Enter your name: ")
+    age = int(input("Enter your age: "))
+    city = input("Enter your city: ")
 
-print(f"Hello {name}, you are {age} years old and live in {city}.")
+    print(f"Hello {name}, you are {age} years old and live in {city}.")
+except ValueError:
+    print("That is not a number.")
