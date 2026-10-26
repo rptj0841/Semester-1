@@ -1,7 +1,10 @@
 # Another bad class implementation
 
 # What does the runtime error mean?
+# AttributeError 'Point' object has no attribute 'x'
+
 # How do we fix the code?
+# Have to add self. before each variable initialisation
 
 class Point:
     """
@@ -12,8 +15,8 @@ class Point:
         """
         Creates a Point, given x & y coordinates.
         """
-        x = x_coordinate
-        y = y_coordinate
+        self.x = x_coordinate
+        self.y = y_coordinate
 
 
 p = Point(1.5, 2.0)

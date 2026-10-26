@@ -2,6 +2,7 @@
 
 ## Attributes
 Name
+Birthday
 Age
 Course
 
@@ -10,3 +11,4 @@ Course
 Confirm attendence
 Submit work
 Enrol on course
+Set contact number
