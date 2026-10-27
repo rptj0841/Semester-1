@@ -6,7 +6,7 @@
     other than any provided template code, was written and developed by
     you independently.
 
-    Name:
+    Name: Prisha Patel
 """
 
 def currency_converter(amount, from_currency, to_currency):
@@ -19,9 +19,9 @@ def currency_converter(amount, from_currency, to_currency):
     }
 
     # your code here
-
-    return None
-
-# Submit only this file currency_converter.py with the completed function.
-
-# Remove any additional code you may have added during development and testing.
+    if amount < 0:
+        return 0.0
+    else:
+        conversions = conversion_rate[from_currency]
+        multiplier = conversions[to_currency]
+        return amount * multiplier
