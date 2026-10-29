@@ -15,7 +15,9 @@ class Money:
         # - the pence parameter is an integer
         # - pence is not negative and not greater than 99
         # Raise appropriate exceptions if any of these are violated
-
+        if not isinstance(pounds, (int)) or not isinstance(pence, (int)):
+            raise TypeError("pounds and pence must be a whole number")
+        if 
         self.pounds = pounds
         self.pence = pence
 
@@ -23,6 +25,8 @@ class Money:
         """
         Returns a string representation of this Money.
         """
+
+        return f"£{self.pounds}.{self.pence:02d}"
         # Add code here to return an appropriate string representation
         # Use the currency symbol for British Pounds Sterling
         # Represent pence with a leading zero if needed (e.g. '05')
