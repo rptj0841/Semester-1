@@ -17,7 +17,9 @@ class Money:
         # Raise appropriate exceptions if any of these are violated
         if not isinstance(pounds, (int)) or not isinstance(pence, (int)):
             raise TypeError("pounds and pence must be a whole number")
-        if 
+        if pence > 99:
+            raise ValueError("number too big")
+            
         self.pounds = pounds
         self.pence = pence
 
