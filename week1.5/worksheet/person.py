@@ -47,9 +47,11 @@ class Person:
         """
         Returns True if today is the person's birthday, returns False otherwise
         """
-        if self.birth == date.today():
-            return True
-        else:
+        if self.birth != date.today():
             return False
+        else:
+            return True
 
+p = Person("Sophia Jacob", date(2026, 11, 2))
+print(p.is_birthday())
 
