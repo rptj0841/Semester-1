@@ -47,11 +47,9 @@ class Person:
         """
         Returns True if today is the person's birthday, returns False otherwise
         """
-        if self.birth != date.today():
-            return False
-        else:
+        if self.birth.day == date.today().day and self.birth.month == date.today().month:
             return True
+        else:
+            return False
 
-p = Person("Sophia Jacob", date(2026, 11, 2))
-print(p.is_birthday())
 
