@@ -10,7 +10,7 @@ class QuakeDatasetError(Exception):
     """
     An exception type for errors involving QuakeDataset.
     """
-
+ 
 
 class QuakeDataset:
     """
